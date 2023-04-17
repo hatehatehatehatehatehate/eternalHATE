@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D2 Test of Attention</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>D2 Test of Attention</h1>
+    <div id="instructions">
+        <div id="instructionsText">Нажмите на все символы "d2" как можно быстрее. Тест длится 5 минут.</div>
+    </div>
+    <div id="testArea"></div>
+    <p>Оставшееся время: <span id="timeRemaining"></span></p>
+    <p>Правильные ответы: <span id="correctAnswers">0</span></p>
+    <p>Неправильные ответы: <span id="incorrectAnswers">0</span></p>
+    <button id="startButton">Start Test</button>
+    <button id="restartButton" style="display: none;">Restart Test</button>
+    <div id="feedback">
+        <h2>Feedback</h2>
+        <form id="feedbackForm">
+            <textarea id="feedbackText" placeholder="Your feedback"></textarea><br>
+            <button id="feedbackSubmit" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <audio id="correctSound" src="audio/correct.mp3" preload="auto"></audio>
+    <audio id="incorrectSound" src="audio/incorrect.mp3" preload="auto"></audio>
+
+    <div id="results" style="display:none;">
+        <h2>Results</h2>
+        <p>Правильные ответы: <span id="finalCorrectAnswers">0</span></p>
+        <p>Неправильные ответы: <span id="finalIncorrectAnswers">0</span></p>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
